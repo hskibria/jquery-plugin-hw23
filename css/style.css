@@ -1,0 +1,28 @@
+body{
+
+}
+.hw21{
+	text-align: center;
+	font-size: 60px;
+	color: aqua;
+}
+.this{
+	text-align: center;
+	font-size: 30px;
+
+}
+.hide{
+	text-align: center;
+	font-size: 30px,
+}
+#text1
+{
+    margin:           3.0em 0.0em;
+    overflow:         hidden;
+    font:             normal normal normal 2.0em/1.5 'Open Sans Light', sans-serif;
+    color:            #ffffff;
+    background-color: #3fafee;
+}
+.owl-carousel{
+	background-color: black;
+}

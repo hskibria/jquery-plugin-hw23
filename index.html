@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--plugins-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+    <!-- font link-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Jquery hw23 plugins</title>
+    <style>
+     
+          .parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+    </style>
+
+    <!--fontasome icon-->
+     <script src="https://kit.fontawesome.com/7f05481ae7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  	<h1 class="hw21">Jquery hw23 plugins</h1>
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">  
+     <h1>Counter plugins</h1>
+    <span class="counter text-center">1,234,567.00</span>
+<span>$</span><span class="counter text-center">1.99</span>
+<span class="counter text-center">12345</span>
+      
+      </div>
+    </div>  
+
+
+</div>
+<section class="paralax">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1>Parallax plugins</h1>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="image/pexels-david-skyrius-2129796.jpg"></div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="image/pexels-lisa-fotios-5280545.jpg"></div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="image/pexels-sebastiaan-stam-5029581.jpg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="text1"> Hm, look likes the wonderful arctext plugin. </div>
+<section class="owl-carusol">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <h1>owl carousel</h1>
+        <!--owl carusol-->
+        <!-- Set up your HTML -->
+<div class="owl-carousel">
+
+  <div> Your Content <img src="image/pexels-lisa-fotios-5280545.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+  <div> Your Content  <img src="image/pexels-david-skyrius-2129796.jpg" alt=""> </div>
+</div>
+
+        <!--owl carusol end-->
+      </div>
+    </div>
+  </div>
+  
+</section>
+ 
+   
+    <!--  JS links -->
+<script src="js/jquery.min.js"></script>
+   <script src="assets/Counter-Up-master/jquery.counterup.min.js"></script>
+   <!--plugins-->
+   <script src="assets/Counter-Up-master/waypoints.min.js"></script>
+ 
+   <script src="assets/CurvedText/javascript/jquery.typorize.js"></script>
+   <script src="assets/CurvedText//javascript/jquery.curvedtext.js"></script>
+   <script src="assets/parallax/parallax.min.js"></script>
+   <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+     <script src="js/script.js"></script>
+
+     <script>
+      $(document).ready(function(){
+        $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+        //plugins
+         /**
+     * Demo 1
+     */
+    var arc = function (t)
+    {
+        return {
+            x: 500.0 + 300.0 * Math.cos(2.0 * Math.PI * t - 0.5 * Math.PI),
+            y: 400.0 + 300.0 * Math.sin(2.0 * Math.PI * t - 0.5 * Math.PI)
+        };
+    };
+
+    $('#text1').curvedText({
+        curve:    arc,
+        domain:   [-0.2, 0.2],
+        viewport: { x: 0.0, y: 0.0, width: 1000.0, height: 400.0 }
+    });
+      
+       	
+
+
+
+      });
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:true
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+})
+
+       
+     </script>
+  
+ 
+  </body>
+</html>
+ 
